@@ -1,4 +1,4 @@
-package sample;
+package com.stradtkt.pomodoro;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,8 +13,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Font.loadFont(getClass().getResource("/fonts/VarelaRound-Regular.ttf").toExternalForm(), 10);
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/home.fxml"));
-        primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 500, 500));
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
